@@ -7,14 +7,14 @@ rem winget install -e --id Kitware.CMake
 
 echo Installing VS Code Extensions...
 
-rem Install ms-vscode.cpptools-extension-pack
-code --install-extension ms-vscode.cpptools-extension-pack
+rem Force reinstall ms-vscode.cpptools-extension-pack
+call code --install-extension ms-vscode.cpptools-extension-pack --force
 
-rem Install platformio.platformio-ide
-code --install-extension platformio.platformio-ide
+rem Force reinstall platformio.platformio-ide
+call code --install-extension platformio.platformio-ide --force
 
-rem Install tal7aouy.icons
-code --install-extension tal7aouy.icons
+rem Force reinstall tal7aouy.icons
+call code --install-extension tal7aouy.icons --force
 
 echo Installation Complete.
 pause
